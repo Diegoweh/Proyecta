@@ -58,7 +58,7 @@ export default function Home() {
 
           {/* Flecha abajo */}
           <div className="flex justify-center mt-12">
-            <Link href="#siguiente-seccion" scroll={true}>
+            <Link href="#portfolio" scroll={true}>
               <ArrowDown
                 size={32}
                 className="text-white hover:text-red-500 transition transform hover:translate-y-1 animate-bounce"
@@ -69,10 +69,12 @@ export default function Home() {
 
 
         {/* Parallax Section */}
+        <section id='portfolio'>
         <ParallaxSection media="/video/home/home_acuario.mp4" />
         <ParallaxSection media="/img/home/mazatun.webp" />
         <ParallaxSection media="/img/home/gaviana.webp" />
         <ParallaxSection media="/img/home/palamares.webp" />
+        </section>
       </ParallaxProvider>
 
       {/* What we do */}
