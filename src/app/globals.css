@@ -5,5 +5,68 @@ body {
   
 }
 
+.client-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-track {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-list {
+  display: flex;
+  align-items: center;
+  animation: scroll-left 35s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .carousel-list {
+    animation: scroll-left 20s linear infinite;
+  }
+}
+
+.carousel-list li {
+  flex: 0 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-list li {
+    padding: 0 1rem;
+  }
+}
+
+.carousel-list img {
+  height: 155px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(1.2);
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .carousel-list img {
+    height: 100px;
+  }
+}
+
+.carousel-list img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 

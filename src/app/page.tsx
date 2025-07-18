@@ -8,6 +8,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from 'framer-motion';
 import Carousel from "@/components/ui/Carousel"
+import ServicesSection from '@/components/layout/ServiceSection';
+import ClientCarousel from '@/components/ui/ClientCarousel';
 
 export default function Home() {
 
@@ -16,7 +18,10 @@ export default function Home() {
       <ParallaxProvider>
         <VideoBanner
           desktopVideo="/video/home/DEMO REEL.mp4"
-          mobileVideo="/video/home/Demo reel vertical.mp4" />
+          mobileVideo="/video/home/Demo reel vertical.mp4"
+        />
+
+        <ClientCarousel />
 
         {/* Hero section */}
         <section className="bg-black text-white px-6 py-20 md:py-32">
@@ -51,7 +56,7 @@ export default function Home() {
                 title="Logo"
                 src="/img/logos/logo_rojo.png"
                 alt="Logo Proyecta"
-                className="object-contain w-[75px] md:w-[120px] h-auto"
+                className="object-contain w-[60px] md:w-[120px] h-auto"
               />
             </motion.div>
           </div>
@@ -75,7 +80,7 @@ export default function Home() {
         <ParallaxSection media="/img/home/gaviana.webp" />
         <ParallaxSection media="/img/home/palamares.webp" />
         </section>
-      </ParallaxProvider>
+      </ParallaxProvider>      
 
       {/* What we do */}
       <section className="bg-black text-white py-16 px-4">
@@ -95,8 +100,10 @@ export default function Home() {
             </p>
           </motion.div>
 
+          <ServicesSection />
+
           {/* Main Content */}
-          <div className="grid lg:grid-cols-5 gap-8 items-start">
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
             {/* Portfolio Image - Left Side */}
             <motion.div
               className="lg:col-span-3"
@@ -119,7 +126,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               {/* Service 1 */}
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
                   <Target className="w-6 h-6 text-white" />
                 </div>
@@ -128,10 +135,10 @@ export default function Home() {
                   <p className="text-gray-300 mb-1">Diseño y desarrollo Web</p>
                   <p className="text-gray-300">Campañas publicitarias</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Service 2 */}
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
                   <Monitor className="w-6 h-6 text-white" />
                 </div>
@@ -140,10 +147,10 @@ export default function Home() {
                   <p className="text-gray-300 mb-1">Estrategia de contenido y redes sociales</p>
                   <p className="text-gray-300">SEO</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* Service 3 */}
-              <div className="flex items-start gap-4">
+              {/* <div className="flex items-start gap-4">
                 <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
                   <Calendar className="w-6 h-6 text-white" />
                 </div>
@@ -152,13 +159,13 @@ export default function Home() {
                   <p className="text-gray-300 mb-1">Producción audiovisual</p>
                   <p className="text-gray-300">Planificación de medios</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* All Projects Link */}
               <div className="pt-8 border-t border-gray-700">
                 <a href="#" className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group">
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-lg font-medium">Todos los proyectos</span>
+                  <ArrowRight className="w-5 h-5 lg:w-7 lg:h-7 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-lg lg:text-4xl font-medium">Todos los proyectos</span>
                 </a>
               </div>
             </motion.div>
