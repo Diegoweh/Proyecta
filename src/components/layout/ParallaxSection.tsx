@@ -2,22 +2,27 @@
 import { Parallax } from 'react-scroll-parallax';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { a } from 'framer-motion/client';
 
 interface ParallaxItemProps {
   media: string;
-  height?: string; // eg: 'h-[100vh]' or 'h-[80vh]'
-  intensity?: number; // parallax factor
+  height?: string;
+  intensity?: number;
   overlay?: boolean;
   videoProps?: React.ComponentPropsWithoutRef<'video'>;
+  logoSrc?: string;
+  title?: string;
+  description?: string;
 }
 
 const ParallaxItem: React.FC<ParallaxItemProps> = ({
   media,
   height = 'h-screen',
-  intensity = 30, // react-scroll-parallax recomienda entre 10 y 40 para efectos suaves
+  intensity = 30,
   overlay = false,
   videoProps = {},
+  logoSrc,
+  title,
+  description,
 }) => {
   const [isVideo, setIsVideo] = useState(false);
 
@@ -28,34 +33,45 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
   return (
     <div className={`relative ${height} w-full overflow-hidden`}>
       <Parallax translateY={[-intensity, intensity]} className="absolute top-0 left-0 w-full h-full">
-        {isVideo ? (
-        <><Link href={'/'}>
+        <Link href={'/'}>
+          {isVideo ? (
             <video
-                {...videoProps}
-                className="w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
+              {...videoProps}
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
             >
-                    <source src={media} type={`video/${media.split('.').pop()}`} />
-                    Tu navegador no soporta el video.
+              <source src={media} type={`video/${media.split('.').pop()}`} />
+              Tu navegador no soporta el video.
             </video>
-        </Link></>
-        ) : (
-        <><Link href={'/'}>
-          <img
-            src={media}
-            alt="Parallax media"
-            className="w-full h-full object-cover"
-          />
-          </Link></>
-        )}
+          ) : (
+            <img
+              src={media}
+              alt="Parallax media"
+              className="w-full h-full object-cover"
+            />
+          )}
+        </Link>
       </Parallax>
 
       {overlay && (
-        <div className="absolute inset-0 bg-black/30 pointer-events-none z-10" />
+        <div className="absolute inset-0 bg-black/100 pointer-events-none z-10" />
       )}
+
+      {/* Contenido sobrepuesto */}
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4">
+        {logoSrc && (
+          <img src={logoSrc} alt="Logo" className="w-50  h-50 lg:w-65 lg:h-65  mb-2 object-contain" />
+        )}
+        {title && (
+          <h2 className="text-3xl md:text-5xl font-bold mb-2 drop-shadow-lg">{title}</h2>
+        )}
+        {description && (
+          <p className="text-base md:text-2xl max-w-xl drop-shadow-md">{description}</p>
+        )}
+      </div>
     </div>
   );
 };

@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Carousel from "@/components/ui/Carousel"
 import ServicesSection from '@/components/layout/ServiceSection';
 import ClientCarousel from '@/components/ui/ClientCarousel';
+import LogoCarouselSection from '@/components/ui/LogoCarouselSection';
 
 export default function Home() {
 
@@ -75,10 +76,34 @@ export default function Home() {
 
         {/* Parallax Section */}
         <section id='portfolio'>
-        <ParallaxSection media="/video/home/home_acuario.mp4" />
-        <ParallaxSection media="/img/home/mazatun.webp" />
-        <ParallaxSection media="/img/home/gaviana.webp" />
-        <ParallaxSection media="/img/home/palamares.webp" />
+        <ParallaxSection
+         media="/video/home/home_acuario.mp4"
+         logoSrc="/img/logos/logo_acuario.png"
+         title="¡Somos llenos de vida!"
+         description="Branding y concepto rector de campaña. Posicionamiento de marca a través de marketing digital." 
+         />         
+
+        <ParallaxSection
+         media="/img/home/mazatun.webp"
+         logoSrc="/img/logos/logo_mazatun.png"
+         title="¡El sabor de toda la vida!"
+         description="Desarrollo del concepto rector y estratégico para la campaña nacional." 
+         />
+
+        <ParallaxSection
+         media="/img/home/gaviana.webp"
+         logoSrc="/img/logos/logo_gaviana.png"
+         title="Tu casa de playa"
+         description="Manejo de redes sociales, campañas de marketing digital y desarrollo web para complejo turístico en Mazatlán." 
+        />
+
+        <ParallaxSection
+         media="/img/home/palamares.webp"
+         logoSrc="/img/logos/logo_palmares.png"
+         title="El sabor de Sinaloa"
+         description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento en RRSS." 
+         />
+
         </section>
       </ParallaxProvider>      
 
@@ -120,7 +145,7 @@ export default function Home() {
             {/* Services List - Right Side */}
             <motion.div
               className="lg:col-span-2 space-y-8"
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
               viewport={{ once: true }}
@@ -171,7 +196,14 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section>      
+      </section>
+
+      {/* LogosSection */}
+      <div className="flex justify-center items-center text-red-500 text-xl
+      lg:text-4xl px-6">
+        Marcas que han confiado en nosotros
+      </div>
+      <LogoCarouselSection />
 
     </>
   );
