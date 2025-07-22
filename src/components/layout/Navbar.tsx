@@ -21,7 +21,7 @@ const Navbar = () => {
           title="Logo"
           src="/img/logos/proyectaw.png"
           alt="Logo Proyecta"
-          className="object-contain w-[75px] md:w-[120px] h-auto"
+          className="object-contain w-[75px] md:w-[100px] h-auto"
           />
         </Link>
       </div>

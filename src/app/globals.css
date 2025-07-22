@@ -8,6 +8,9 @@ body {
   background-color: #000;
   
 }
+.body-white{
+  background-color: #fff;
+}
 
 /* Carousel */
 .client-carousel {

@@ -33,7 +33,7 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
   return (
     <div className={`relative ${height} w-full overflow-hidden`}>
       <Parallax translateY={[-intensity, intensity]} className="absolute top-0 left-0 w-full h-full">
-        <Link href={'/'}>
+        <a href={'/'}>
           {isVideo ? (
             <video
               {...videoProps}
@@ -53,7 +53,7 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
               className="w-full h-full object-cover"
             />
           )}
-        </Link>
+        </a>
       </Parallax>
 
       {overlay && (

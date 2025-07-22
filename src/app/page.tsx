@@ -188,10 +188,10 @@ export default function Home() {
 
               {/* All Projects Link */}
               <div className="pt-8 border-t border-gray-700">
-                <a href="#" className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group">
+                <Link href="/projects" className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group">
                   <ArrowRight className="w-5 h-5 lg:w-7 lg:h-7 group-hover:translate-x-1 transition-transform" />
                   <span className="text-lg lg:text-4xl font-medium">Todos los proyectos</span>
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
