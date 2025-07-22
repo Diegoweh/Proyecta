@@ -53,7 +53,7 @@ const acuarioImages: ProjectImage[] = [
     alt: "Habitación deluxe",
     speed: -0.6, // Reducido ligeramente para movimiento más sutil
     title: "Acuario Mazatlán",
-    position: "center",
+    position: "end",
   },
   {
     src: "/img/projects/acuario/gam5.webp",
@@ -80,6 +80,9 @@ const Page = () => {
         </div>
 
         
+
+      </div>
+      <div className="bg-white py-12 text-black">
 
       </div>
     </SmoothScrolling>
