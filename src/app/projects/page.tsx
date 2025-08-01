@@ -54,7 +54,7 @@ const Page = () => {
             <h4 className="text-sm">Mazatún</h4>
             <h3 className="text-2xl font-bold">El sabor de toda la vida</h3>
             <a
-              href="#"
+              href="/mazatun"
               className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
             >
               Ver caso de estudio →
