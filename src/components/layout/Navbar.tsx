@@ -36,18 +36,18 @@ const Navbar = () => {
       >
       <div className="hidden md:flex gap-6 text-white font-medium">
         <Link href="/proyectos">
-        <span className="text-red-500 hover:text-gray-100 transition cursor-pointer text-sm md:text-4xl">
-            What
+        <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
+            nosotros
         </span>
         </Link>
         <Link href="/nosotros">
-        <span className="text-red-500 hover:text-gray-100 transition cursor-pointer text-sm md:text-4xl">
-            We
+        <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
+            servicios
         </span>
         </Link>
         <Link href="/contacto">
-        <span className="text-red-500 hover:text-gray-100 transition cursor-pointer text-sm md:text-4xl">
-            Do
+        <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
+            contacto
         </span>
         </Link>
       </div>
@@ -66,13 +66,13 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-black/90 backdrop-blur-md flex flex-col items-center py-4 gap-4 font-medium md:hidden">
           <Link href="/proyectos" onClick={() => setMenuOpen(false)}>
-            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">What</span>
+            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">nosotros</span>
           </Link>
           <Link href="/nosotros" onClick={() => setMenuOpen(false)}>
-            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">We</span>
+            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">servicios</span>
           </Link>
           <Link href="/contacto" onClick={() => setMenuOpen(false)}>
-            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">Do</span>
+            <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">contacto</span>
           </Link>
         </div>
       )}

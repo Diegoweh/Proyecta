@@ -11,6 +11,7 @@ import Carousel from "@/components/ui/Carousel"
 import ServicesSection from '@/components/layout/ServiceSection';
 import ClientCarousel from '@/components/ui/ClientCarousel';
 import LogoCarouselSection from '@/components/ui/LogoCarouselSection';
+import TaglineSection from '@/components/layout/tagline-section';
 
 export default function Home() {
 
@@ -105,7 +106,9 @@ export default function Home() {
          />
 
         </section>
-      </ParallaxProvider>      
+      </ParallaxProvider>
+
+          
 
       {/* What we do */}
       <section className="bg-black text-white py-16 px-4">
@@ -118,11 +121,12 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl md:text-6xl font-bold text-red-500 mb-6">WHAT WE DO</h2>
+            {/* <h2 className="text-5xl md:text-6xl font-bold text-red-500 mb-6">WHAT WE DO</h2>
             <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               Somos una agencia de marketing, motivados por las metas de nuestras marcas aliadas. Expertos en marketing,
               relaciones públicas, publicidad, estrategias digitales y web.
-            </p>
+            </p> */}
+            <TaglineSection tagline="What we do" className="" />  
           </motion.div>
 
           <ServicesSection />
@@ -130,7 +134,7 @@ export default function Home() {
           {/* Main Content */}
           <div className="grid lg:grid-cols-3 gap-8 items-start">
             {/* Portfolio Image - Left Side */}
-            <motion.div
+            {/* <motion.div
               className="lg:col-span-3"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -140,7 +144,7 @@ export default function Home() {
               <div className="lg:col-span-3">
                 <Carousel />
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Services List - Right Side */}
             <motion.div
