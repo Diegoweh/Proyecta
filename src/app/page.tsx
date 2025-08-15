@@ -3,7 +3,7 @@
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ParallaxSection from "@/components/layout/ParallaxSection";
 import VideoBanner from "@/components/layout/VideoBanner";
-import { ArrowDown, ArrowRight, Calendar, Monitor, Target } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, Calendar, Monitor, Target } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -133,70 +133,45 @@ export default function Home() {
 
           {/* Main Content */}
           <div className="grid lg:grid-cols-3 gap-8 items-start">
-            {/* Portfolio Image - Left Side */}
-            {/* <motion.div
-              className="lg:col-span-3"
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="lg:col-span-3">
-                <Carousel />
-              </div>
-            </motion.div> */}
-
             {/* Services List - Right Side */}
             <motion.div
-              className="lg:col-span-2 space-y-8"
+              className="lg:col-span-3 space-y-8"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
               viewport={{ once: true }}
-            >
-              {/* Service 1 */}
-              {/* <div className="flex items-start gap-4">
-                <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
-                  <Target className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Branding</h3>
-                  <p className="text-gray-300 mb-1">Diseño y desarrollo Web</p>
-                  <p className="text-gray-300">Campañas publicitarias</p>
-                </div>
-              </div> */}
-
-              {/* Service 2 */}
-              {/* <div className="flex items-start gap-4">
-                <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
-                  <Monitor className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Marketing Digital</h3>
-                  <p className="text-gray-300 mb-1">Estrategia de contenido y redes sociales</p>
-                  <p className="text-gray-300">SEO</p>
-                </div>
-              </div> */}
-
-              {/* Service 3 */}
-              {/* <div className="flex items-start gap-4">
-                <div className="bg-red-500 p-3 rounded-full flex-shrink-0">
-                  <Calendar className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Desarrollo de eventos</h3>
-                  <p className="text-gray-300 mb-1">Producción audiovisual</p>
-                  <p className="text-gray-300">Planificación de medios</p>
-                </div>
-              </div> */}
+            >              
 
               {/* All Projects Link */}
               <div className="pt-8 border-t border-gray-700">
-                <Link href="/projects" className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group">
-                  <ArrowRight className="w-5 h-5 lg:w-7 lg:h-7 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-lg lg:text-4xl font-medium">Todos los proyectos</span>
-                </Link>
+                <div className="max-w-6xl mx-auto px-4 py-16">
+                  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                    
+                    {/* Link a todos los proyectos */}
+                    <div className="flex justify-center md:justify-start">
+                      <Link
+                        href="/projects"
+                        className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group"
+                      >
+                        <ArrowRight className="w-5 h-5 lg:w-7 lg:h-7 group-hover:translate-x-1 transition-transform" />
+                        <span className="text-lg lg:text-2xl font-medium">Todos los proyectos</span>
+                      </Link>
+                    </div>
+
+                    {/* Flecha hacia arriba */}
+                    <div className="flex justify-center md:justify-end">
+                      <Link href="#" scroll={true} className="group">
+                        <ArrowUp
+                          size={32}
+                          className="text-white hover:text-red-500 transition transform group-hover:-translate-y-1"
+                        />
+                      </Link>
+                    </div>
+
+                  </div>
+                </div>
               </div>
+
             </motion.div>
           </div>
         </div>

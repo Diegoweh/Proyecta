@@ -32,23 +32,23 @@ export default function ServicesSection({ className = "", translations }: Servic
   const defaultTranslations = {
     websites: {
       title: "Websites",
-      content: "Creamos sitios a la medida que combinan UX inteligente, visuales poderosos y alto rendimiento. Pensados para tu marca. Optimizados para lograr resultados. Más que sitios web: experiencias digitales que inspiran confianza y generan acción.",
+      content: "Creamos sitios a la medida que combinan UX inteligente, visuales poderosos y alto rendimiento. Pensados para tu marca. Optimizados para lograr resultados. Más que sitios web: experiencias digitales que inspiran confianza y generan acción",
     },
     apps: {
-      title: "Social",
-      content: "Creamos estrategias sociales que van más allá del posteo. Conectan, generan conversación y construyen comunidad. En cada plataforma, con cada formato, con cada mensaje. Nos enfocamos en la relevancia, el storytelling y resultados que se reflejan en el crecimiento real de la marca.",
+      title: "Branding",
+      content: "Diseñamos logotipos e identidades visuales que amplifican la esencia de tu marca. Desde el símbolo que la representa hasta su aplicación en editorial, digital y empaque, cada elemento es estratégico, estético y pensado para conectar. Elevamos la percepción y coherencia en cada punto de contacto, asegurando experiencias memorables y consistentes",
     },
     uiux: {
-      title: "Design",
-      content: "Diseñamos sistemas visuales que amplifican la voz de tu marca. Desde identidad y editorial hasta digital y empaque, cada pieza es intencional, poderosa y pensada para conectar. Cada elemento busca elevar la percepción y coherencia de tu marca en todos sus puntos de contacto.",
+      title: "DIGITAL BRAND EXPERIENCE",
+      content: "Creamos experiencias digitales que fortalecen y proyectan tu marca en cada punto de contacto online. Diseñamos estrategias que conectan, generan conversación y construyen comunidad, adaptadas a cada plataforma, formato y mensaje. Combinamos creatividad, storytelling y datos para lograr resultados medibles que impulsan el crecimiento y el valor de tu marca",
     },
     seo: {
-      title: "SEO",
-      content: "Optimizamos tu presencia en buscadores. SEO técnico, de contenido y en página, trabajando en conjunto para aumentar visibilidad y crecimiento orgánico. Alineamos la estrategia de búsqueda con tus objetivos de negocio para atraer al público correcto de forma constante.",
+      title: "SEO/SEM",
+      content: "Optimizamos tu presencia en buscadores. SEO técnico, de contenido y en página, trabajando en conjunto para aumentar visibilidad y crecimiento orgánico. Alineamos la estrategia de búsqueda con tus objetivos de negocio para atraer al público correcto de forma constante",
     },
     advertising: {
       title: "Advertising",
-      content: "Diseñamos campañas que convierten. Con segmentación precisa y narrativa creativa, transformamos la atención en acción e impacto real. Nuestras campañas combinan rendimiento con emoción para lograr mensajes que inspiran y persuaden.",
+      content: "Diseñamos campañas que convierten. Con segmentación precisa y narrativa creativa, transformamos la atención en acción e impacto real. Nuestras campañas combinan rendimiento con emoción para lograr mensajes que inspiran y persuaden",
     },
     services: "Servicios",
   }
@@ -56,11 +56,6 @@ export default function ServicesSection({ className = "", translations }: Servic
   const t = translations || defaultTranslations
 
   const points = [
-    {
-      title: t.websites.title,
-      content: t.websites.content,
-      image: websiteSvg,
-    },
     {
       title: t.apps.title,
       content: t.apps.content,
@@ -72,14 +67,19 @@ export default function ServicesSection({ className = "", translations }: Servic
       image: designSvg,
     },
     {
-      title: t.seo.title,
-      content: t.seo.content,
-      image: seoSvg,
-    },
-    {
       title: t.advertising.title,
       content: t.advertising.content,
       image: advertisingSvg,
+    },
+    {
+      title: t.websites.title,
+      content: t.websites.content,
+      image: websiteSvg,
+    },
+    {
+      title: t.seo.title,
+      content: t.seo.content,
+      image: seoSvg,
     },
   ]
 
