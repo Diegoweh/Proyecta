@@ -1,3 +1,5 @@
+"use client"
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const Page = () => {
@@ -6,10 +8,26 @@ const Page = () => {
 
       {/* Acuario   */}
       <section className="max-w-5xl mx-auto px-4 py-20 text-center space-y-8 text-white">
-        <h1 className="text-4xl md:text-5xl font-bold text-red-500">Nuestros Proyectos</h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Descubre algunos de los proyectos más importantes en los que hemos colaborado, impulsando experiencias únicas en Mazatlán y más allá.
-        </p>
+        <motion.h1
+          className="text-4xl md:text-5xl font-bold text-red-500"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          Nuestros Proyectos
+        </motion.h1>
+
+        <motion.p
+          className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mt-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          Descubre algunos de los proyectos más importantes en los que hemos colaborado, impulsando experiencias únicas en Mazatlán y más allá.
+        </motion.p>
+
 
         {/* Contenedor del video + overlay */}
         <div className="relative w-full aspect-video max-w-full mx-auto rounded-xl overflow-hidden shadow-lg">
@@ -76,7 +94,7 @@ const Page = () => {
               <h4 className="text-sm">Las Gavias Grand</h4>
               <h3 className="text-2xl font-bold">Bienvenido a nuestro mundo</h3>
               <a
-                href="#"
+                href="/gavias"
                 className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
               >
                 Ver caso de estudio →
@@ -96,7 +114,7 @@ const Page = () => {
               <h4 className="text-sm">Palmarés</h4>
               <h3 className="text-2xl font-bold">El sabor de Sinaloa</h3>
               <a
-                href="#"
+                href="/palmares"
                 className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
               >
                 Ver caso de estudio →

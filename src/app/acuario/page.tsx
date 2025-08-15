@@ -5,65 +5,9 @@ import ImageList from '@/components/layout/ImageList'; // ajusta esta ruta segú
 import SmoothScrolling from '@/components/layout/SmoothScrolling';
 import { ProjectImage } from '@/components/layout/ImageList';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { ArrowRight, ArrowUp } from 'lucide-react';
 
-// const acuarioImages: ProjectImage[] = [
-//   {
-//     src: "/img/projects/acuario/gam3.webp",
-//     alt: "Acuario Mazatlán",
-//     title: "Acuario Mazatlán",
-//     speed: 0.8,  // Reducido ligeramente para un movimiento más suave
-//     position: "center",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam1.webp",
-//     alt: "Vista desde la piscina",
-//     speed: 1.5,  // Reducido de 2 a 1.5 para menos velocidad
-//     title: "Acuario Mazatlán",
-//     position: "start",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam2.webp",
-//     alt: "Lobby principal",
-//     speed: -2.5, // Cambiado drásticamente de -20 a -2.5 para evitar movimiento excesivo
-//     title: "Acuario Mazatlán",
-//     position: "end",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam4.webp",
-//     alt: "Zona lounge",
-//     speed: -0.8, // Ajustado para coincidir con el positivo similar
-//     title: "Acuario Mazatlán",
-//     position: "start",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam6.webp",
-//     alt: "Lobby principal",
-//     speed: -1.8, // Reducido de -3 a -1.8 para más suavidad
-//     title: "Acuario Mazatlán",
-//     position: "end",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam8.webp",
-//     alt: "Zona lounge",
-//     speed: 1.8,  // Ajustado para coincidir con el negativo similar
-//     title: "Acuario Mazatlán",
-//     position: "start",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam7.webp",
-//     alt: "Habitación deluxe",
-//     speed: -0.6, // Reducido ligeramente para movimiento más sutil
-//     title: "Acuario Mazatlán",
-//     position: "end",
-//   },
-//   {
-//     src: "/img/projects/acuario/gam5.webp",
-//     alt: "Vista desde la piscina",
-//     speed: 0.6,  // Cambiado de -1 a 0.6 para variación positiva
-//     title: "Acuario Mazatlán",
-//     position: "start",
-//   },
-// ];
 
 // caorusel
 interface CarouselProps {
@@ -132,7 +76,7 @@ const Page = () => {
       </p>
     </div>
 
-    {/* Video animado con Framer Motion */}
+      {/* Video animado con Framer Motion */}
       <motion.div
         className="mt-8 w-full max-w-6xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg"
         initial={{ opacity: 0, y: 50 }}
@@ -176,7 +120,7 @@ const Page = () => {
         />
       </div>
 
-      {/* conversion venta online */}
+      {/* two images carousel with text */}
       <div className="mt-12 max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Carrusel izquierda */}
@@ -281,7 +225,7 @@ const Page = () => {
         />
       </motion.div>
 
-      {/* Pax afluencia */}
+      {/* two images carousel with text */}
       <div className="mt-12 max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           
@@ -328,7 +272,7 @@ const Page = () => {
         />
       </motion.div>
 
-      {/* Imágenes con animación */}
+      {/* 2 Imágenes con animación */}
       <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6 max-w-6xl mx-auto px-4">
         {/* Imagen izquierda */}
         <motion.img
@@ -353,28 +297,28 @@ const Page = () => {
         />
       </div>
 
-    
-    {/* <SmoothScrolling>
-      <div className="bg-white py-12 text-black">
-        <div className="text-red-500 text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold">
-            Acuario Mazatlán
-          </h1>
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-10 gap-6">
+          
+          {/* Link a todos los proyectos */}
+          <Link
+            href="/projects"
+            className="flex items-center gap-3 text-red-500 hover:text-red-400 transition-colors group"
+          >
+            <ArrowRight className="w-5 h-5 lg:w-7 lg:h-7 group-hover:translate-x-1 transition-transform" />
+            <span className="text-lg lg:text-2xl font-medium">Volver a todos los proyectos</span>
+          </Link>
+
+          {/* Flecha hacia arriba */}
+          <Link href="#" scroll={true} className="group">
+            <ArrowUp
+              size={32}
+              className="text-white hover:text-red-500 transition transform group-hover:-translate-y-1"
+            />
+          </Link>
         </div>
-
-        Lista de imágenes animadas con parallax 
-        <div className="flex flex-col items-center px-2">
-        <ImageList images={acuarioImages}/>
-        </div>
-
-        
-
-      </div>
-      <div className="bg-white py-12 text-black">
-
-      </div>
-    </SmoothScrolling> */}
-
+      </div>   
+ 
     </>
   );
 };
