@@ -29,98 +29,112 @@ const Page = () => {
         </motion.p>
 
 
-        {/* Contenedor del video + overlay */}
-        <div className="relative w-full aspect-video max-w-full mx-auto rounded-xl overflow-hidden shadow-lg">
-            <video
-            className="w-full h-full object-cover"
+        {/* Contenedor entero como link */}
+        <a
+          href="/acuario"
+          className="block relative w-full aspect-video max-w-full mx-auto rounded-xl overflow-hidden shadow-lg group"
+        >
+          <video
+            className="w-full h-full object-cover group-hover:brightness-75 transition"
             src="/video/projects/gam.mp4"
             autoPlay
             loop
             muted
             playsInline
-            >
+          >
             Tu navegador no soporta el video.
-            </video>
+          </video>
 
-            {/* Overlay posicionado dentro del contenedor */}
-            <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 z-10 text-left   p-4 rounded-md max-w-xs">
+          {/* Overlay dentro del contenedor */}
+          <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 z-10 text-left p-4 rounded-md max-w-xs text-white">
             <h4 className="text-sm">Gran Acuario Mazatlán</h4>
             <h3 className="text-lg md:text-2xl font-bold">¡Somos llenos de vida!</h3>
-            <a
-                href="/acuario"                
-                className="mt-1 inline-flex items-center text-sm underline underline-offset-4"
-            >
-                Ver caso de estudio →
-            </a>
-            </div>
-        </div>
+            <span className="mt-1 inline-flex items-center text-sm underline underline-offset-4">
+              Ver caso de estudio →
+            </span>
+          </div>
+        </a>
       </section>
 
 
       {/* Mazatun, Gavias & Palamares */}
       <section className="bg-black text-white px-4 py-16">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Imagen izquierda grande */}
-        <div className="relative group aspect-[3/4] md:aspect-auto">
+        {/* Imagen izquierda grande como link */}
+        <a
+          href="/mazatun"
+          className="relative group aspect-[3/4] md:aspect-auto block rounded-md overflow-hidden"
+        >
           <img
             src="/img/projects/6.webp"
             alt="Mazatún"
-            className="w-full h-full object-cover rounded-md"
+            className="w-full h-full object-cover"
           />
+
+          {/* Overlay oscuro al hover */}
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition" />
-          <div className="absolute bottom-6 left-6 z-10">
+
+          {/* Texto overlay */}
+          <div className="absolute bottom-6 left-6 z-10 text-white">
             <h4 className="text-sm">Mazatún</h4>
             <h3 className="text-2xl font-bold">El sabor de toda la vida</h3>
-            <a
-              href="/mazatun"
-              className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
-            >
+            <span className="mt-2 inline-flex items-center text-sm underline underline-offset-4">
               Ver caso de estudio →
-            </a>
+            </span>
           </div>
-        </div>
+        </a>
+
 
         {/* Dos imágenes derechas */}
         <div className="flex flex-col gap-4">
-          {/* Superior */}
-          <div className="relative group aspect-[16/9]">
+          {/* Superior como link */}
+          <a
+            href="/gavias"
+            className="relative group aspect-[16/9] block rounded-md overflow-hidden"
+          >
             <img
               src="/img/projects/lasgavias.webp"
               alt="Las Gavias"
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover"
             />
+
+            {/* Overlay oscuro con hover */}
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition" />
-            <div className="absolute bottom-6 left-6 z-10">
+
+            {/* Texto overlay */}
+            <div className="absolute bottom-6 left-6 z-10 text-white">
               <h4 className="text-sm">Las Gavias Grand</h4>
               <h3 className="text-2xl font-bold">Bienvenido a nuestro mundo</h3>
-              <a
-                href="/gavias"
-                className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
-              >
+              <span className="mt-2 inline-flex items-center text-sm underline underline-offset-4">
                 Ver caso de estudio →
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
 
-          {/* Inferior */}
-          <div className="relative group aspect-[16/9]">
+          {/* Inferior como link */}
+          <a
+            href="/palmares"
+            className="relative group aspect-[16/9] block rounded-md overflow-hidden"
+          >
             <img
               src="/img/projects/4_palmares.webp"
               alt="Palmarés"
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover"
             />
+
+            {/* Overlay oscuro con hover */}
             <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition" />
-            <div className="absolute bottom-6 left-6 z-10">
+
+            {/* Texto overlay */}
+            <div className="absolute bottom-6 left-6 z-10 text-white">
               <h4 className="text-sm">Palmarés</h4>
               <h3 className="text-2xl font-bold">El sabor de Sinaloa</h3>
-              <a
-                href="/palmares"
-                className="mt-2 inline-flex items-center text-sm underline underline-offset-4"
-              >
+              <span className="mt-2 inline-flex items-center text-sm underline underline-offset-4">
                 Ver caso de estudio →
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
+
         </div>
       </div>
     </section>

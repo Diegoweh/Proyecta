@@ -81,28 +81,32 @@ export default function Home() {
          media="/video/home/home_acuario.mp4"
          logoSrc="/img/logos/logo_acuario.png"
          title="¡Somos llenos de vida!"
-         description="Branding y concepto rector de campaña. Posicionamiento de marca a través de marketing digital." 
+         description="Branding y concepto rector de campaña. Posicionamiento de marca a través de marketing digital."
+         href='/acuario' 
          />         
 
         <ParallaxSection
          media="/img/home/mazatun.webp"
          logoSrc="/img/logos/logo_mazatun.png"
          title="¡El sabor de toda la vida!"
-         description="Desarrollo del concepto rector y estratégico para la campaña nacional." 
+         description="Desarrollo del concepto rector y estratégico para la campaña nacional."
+         href='/mazatun' 
          />
 
         <ParallaxSection
          media="/img/home/gaviana.webp"
          logoSrc="/img/logos/logo_gaviana.png"
          title="Tu casa de playa"
-         description="Manejo de redes sociales, campañas de marketing digital y desarrollo web para complejo turístico en Mazatlán." 
+         description="Manejo de redes sociales, campañas de marketing digital y desarrollo web para complejo turístico en Mazatlán."
+         href='/gavias' 
         />
 
         <ParallaxSection
          media="/img/home/palamares.webp"
          logoSrc="/img/logos/logo_palmares.png"
          title="El sabor de Sinaloa"
-         description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento en RRSS." 
+         description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento en RRSS."
+         href='/palmares' 
          />
 
         </section>
