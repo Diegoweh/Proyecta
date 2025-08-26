@@ -32,23 +32,23 @@ export default function ServicesSection({ className = "", translations }: Servic
   const defaultTranslations = {
     websites: {
       title: "Websites",
-      content: "Creamos sitios a la medida que combinan UX inteligente, visuales poderosos y alto rendimiento. Pensados para tu marca. Optimizados para lograr resultados. Más que sitios web: experiencias digitales que inspiran confianza y generan acción",
+      content: "Creamos sitios a la medida que combinan UX inteligente, visuales poderosos y alto rendimiento. Pensados para tu marca. Optimizados para lograr resultados. Más que sitios web: experiencias digitales que inspiran confianza y generan acción.",
     },
     apps: {
       title: "Branding",
-      content: "Diseñamos logotipos e identidades visuales que amplifican la esencia de tu marca. Desde el símbolo que la representa hasta su aplicación en editorial, digital y empaque, cada elemento es estratégico, estético y pensado para conectar. Elevamos la percepción y coherencia en cada punto de contacto, asegurando experiencias memorables y consistentes",
+      content: "Diseñamos logotipos e identidades visuales que amplifican la esencia de tu marca. Desde el símbolo que la representa hasta su aplicación en editorial, digital y empaque, cada elemento es estratégico, estético y pensado para conectar. Elevamos la percepción y coherencia en cada punto de contacto, asegurando experiencias memorables y consistentes.",
     },
     uiux: {
       title: "DIGITAL BRAND EXPERIENCE",
-      content: "Creamos experiencias digitales que fortalecen y proyectan tu marca en cada punto de contacto online. Diseñamos estrategias que conectan, generan conversación y construyen comunidad, adaptadas a cada plataforma, formato y mensaje. Combinamos creatividad, storytelling y datos para lograr resultados medibles que impulsan el crecimiento y el valor de tu marca",
+      content: "Creamos experiencias digitales que fortalecen y proyectan tu marca en cada punto de contacto online. Diseñamos estrategias que conectan, generan conversación y construyen comunidad, adaptadas a cada plataforma, formato y mensaje. Combinamos creatividad, storytelling y datos para lograr resultados medibles que impulsan el crecimiento y el valor de tu marca.",
     },
     seo: {
       title: "SEO/SEM",
-      content: "Optimizamos tu presencia en buscadores. SEO técnico, de contenido y en página, trabajando en conjunto para aumentar visibilidad y crecimiento orgánico. Alineamos la estrategia de búsqueda con tus objetivos de negocio para atraer al público correcto de forma constante",
+      content: "Optimizamos tu presencia en buscadores. SEO técnico, de contenido y en página, trabajando en conjunto para aumentar visibilidad y crecimiento orgánico. Alineamos la estrategia de búsqueda con tus objetivos de negocio para atraer al público correcto de forma constante.",
     },
     advertising: {
       title: "Advertising",
-      content: "Diseñamos campañas que convierten. Con segmentación precisa y narrativa creativa, transformamos la atención en acción e impacto real. Nuestras campañas combinan rendimiento con emoción para lograr mensajes que inspiran y persuaden",
+      content: "Diseñamos campañas que convierten. Con segmentación precisa y narrativa creativa, transformamos la atención en acción e impacto real. Nuestras campañas combinan rendimiento con emoción para lograr mensajes que inspiran y persuaden.",
     },
     services: "Servicios",
   }

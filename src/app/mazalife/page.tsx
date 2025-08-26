@@ -66,7 +66,7 @@ const page = () => {
         Mazalife
       </h1>
       <p className="mt-4 text-base md:text-lg text-white max-w-2xl mx-auto">
-        Gestión de estrategia integral para unidades de negocio de grupo turístico en Mazatlán
+        Gestión de estrategia integral para unidades de negocio de grupo turístico en Mazatlán.
       </p>
     </div>
 
@@ -108,7 +108,7 @@ const page = () => {
             Generación de contenidos y de materiales
         </h2>
         <p className="text-base md:text-lg text-white text-center">
-            para unidades de negocio: Farolesa, Museo Nacional de la Ballena, Munba Expeditions, Shekinah Beach Club y City Tour
+            para unidades de negocio: Farolesa, Museo Nacional de la Ballena, Munba Expeditions, Shekinah Beach Club y City Tour.
         </p>
         </motion.div>
     </div>

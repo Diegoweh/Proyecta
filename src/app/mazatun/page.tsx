@@ -197,7 +197,7 @@ const mazatun = () => {
             Mazatún nos cuenta como nos ha acompañado
           </h2>
           <p className="text-base md:text-lg text-white text-center">
-            a lo largo de los años como un producto básico para el consumo, concientizando los beneficios alimentarios que ofrece a todas las familias mexicanas
+            a lo largo de los años como un producto básico para el consumo, concientizando los beneficios alimentarios que ofrece a todas las familias mexicanas.
           </p>
         </motion.div>
 

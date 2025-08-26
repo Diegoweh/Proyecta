@@ -65,9 +65,12 @@ const page = () => {
 
     {/* Title */}
     <div className="text-red-500 text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold">
-            Las Gavias Resorts
-          </h1>
+      <h1 className="text-4xl md:text-5xl font-bold">
+        Las Gavias Resorts
+      </h1>
+      <p className="mt-4 text-base md:text-lg text-white max-w-2xl mx-auto">
+      Manejo de redes sociales, campañas de marketing digital y desarrollo web para complejo turístico en Mazatlán.
+      </p>
     </div>
 
     {/* Image banner */}
@@ -125,7 +128,7 @@ const page = () => {
             Trabajo de publicidad de exteriores y contenido digital
             </h2>
             <p className="text-base md:text-lg text-white text-center">
-            se trabajaron campañas para generar visitas y registros de prospectos interesados en la compra del inmueble
+            se trabajaron campañas para generar visitas y registros de prospectos interesados en la compra del inmueble.
             </p>
         </motion.div>
         </div>
@@ -189,7 +192,7 @@ const page = () => {
             Mazatún nos cuenta como nos ha acompañado
             </h2>
             <p className="text-base md:text-lg text-white text-center">
-            a lo largo de los años como un producto básico para el consumo, concientizando los beneficios alimentarios que ofrece a todas las familias mexicanas
+            a lo largo de los años como un producto básico para el consumo, concientizando los beneficios alimentarios que ofrece a todas las familias mexicanas.
             </p>
         </motion.div>
 

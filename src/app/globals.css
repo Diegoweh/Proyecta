@@ -3,6 +3,11 @@
 @import 'swiper/css/autoplay';
 @import 'swiper/css/pagination';
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 body {
   background-color: #000;

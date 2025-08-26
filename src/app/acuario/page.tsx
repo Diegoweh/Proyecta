@@ -72,7 +72,7 @@ const Page = () => {
         Gran Acuario Mazatlán
       </h1>
       <p className="mt-4 text-base md:text-lg text-white max-w-2xl mx-auto">
-        El más grande de México y más importante en Latinoamérica, dedicado al Mar de Cortés
+        El más grande de México y más importante en Latinoamérica, dedicado al Mar de Cortés.
       </p>
     </div>
 
@@ -138,7 +138,7 @@ const Page = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-              El más grande de México y más importante en Latinoamérica, dedicado al Mar de Cortés.
+              El más grande de México y más importante en Latinoamérica, dedicado al Mar de Cortés
             </h2>
             <p className="text-base md:text-lg text-white text-center">
               Desarrollamos branding y concepto rector de campaña. Realizamos manual de marca con el fin de presentar los elementos de identidad gráfica de la marca GAM, la gama de aplicaciones de uso y materiales diversos.
@@ -238,7 +238,7 @@ const Page = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-              Posicionamiento de marca a través de marketing digital.
+              Posicionamiento de marca a través de marketing digital
             </h2>
             <p className="text-base md:text-lg text-white text-center">
               Desarrollamos materiales museográficos: señalética, infografías y cajas de luz, entre otros. Realizamos la producción del video comercial para la campaña nacional de lanzamiento. Trabajamos RRSS, página web y newsletter digital a través de mailing.

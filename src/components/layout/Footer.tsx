@@ -20,7 +20,9 @@ export default function Footer() {
                 Enviar Email
               </a>
               <a
-                href="#"
+                href="https://wa.me/526699869090?text=Hola%2C%20quiero%20más%20información"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 WhatsApp
@@ -95,30 +97,30 @@ export default function Footer() {
             <h3 className="text-red-500 font-bold text-lg mb-4">EMPRESA</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="#we" className="text-gray-300 hover:text-red-500 transition-colors">
                   Nosotros
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="/projects" className="text-gray-300 hover:text-red-500 transition-colors">
                   Portafolio
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
                   Blog
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
                   Contacto
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
                   Aviso de Privacidad
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -147,7 +149,12 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MessageCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                  <a
+                    href="https://wa.me/526699869090"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-red-500 transition-colors"
+                  >
                     WhatsApp
                   </a>
                 </div>

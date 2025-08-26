@@ -26,7 +26,7 @@ export default function Home() {
         <ClientCarousel />
 
         {/* Hero section */}
-        <section className="bg-black text-white px-6 py-20 md:py-32">
+        <section id='we' className="bg-black text-white px-6 py-20 md:py-32">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-between gap-8">
             {/* Texto animado desde la izquierda al hacer scroll */}
             <motion.div
@@ -38,7 +38,7 @@ export default function Home() {
             >
               <h1 className="text-3xl md:text-6xl font-bold leading-tight text-red-500 mb-6">
                 Empower your ideas,<br />
-                Boost your success.
+                Boost your success
               </h1>
               <p className="text-base md:text-xl text-white/90">
                 Somos un equipo estratega y<br />
@@ -102,11 +102,11 @@ export default function Home() {
         />
 
         <ParallaxSection
-         media="/img/home/palamares.webp"
-         logoSrc="/img/logos/logo_palmares.png"
-         title="El sabor de Sinaloa"
-         description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento en RRSS."
-         href='/palmares' 
+         media="/img/projects/mazalife/1.webp"
+         logoSrc="/img/logos/logo1.svg"
+         title="¡Diversión para todos!"
+         description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento local."
+         href='/mazalife' 
          />
 
         </section>
@@ -115,7 +115,7 @@ export default function Home() {
           
 
       {/* What we do */}
-      <section className="bg-black text-white py-16 px-4">
+      <section id='servicios' className="bg-black text-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* LogosSection */}
-      <div className="flex justify-center items-center text-red-500 text-xl
+      <div id='contacto' className="flex justify-center items-center text-red-500 text-xl
       lg:text-4xl px-6">
         Marcas que han confiado en nosotros
       </div>
