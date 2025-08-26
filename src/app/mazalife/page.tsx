@@ -137,7 +137,7 @@ const page = () => {
           <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6 max-w-6xl mx-auto px-4">
             {/* Imagen izquierda */}
             <motion.img
-              src="/img/projects/mazalife/mzLife2.webp" // Reemplaza con tu imagen
+              src="/img/projects/mazalife/mzlife2.webp" // Reemplaza con tu imagen
               alt="Diseño Izquierda"
               className="w-full md:w-1/2 rounded-2xl shadow-md object-cover"
               initial={{ opacity: 0, x: -50 }}
@@ -148,7 +148,7 @@ const page = () => {
     
             {/* Imagen derecha */}
             <motion.img
-              src="/img/projects/mazalife/mzLife3.webp" // Reemplaza con tu imagen
+              src="/img/projects/mazalife/mzlife3.webp" // Reemplaza con tu imagen
               alt="Diseño Derecha"
               className="w-full md:w-1/2 rounded-2xl shadow-md object-cover"
               initial={{ opacity: 0, x: 50 }}
