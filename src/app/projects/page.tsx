@@ -113,11 +113,11 @@ const Page = () => {
 
           {/* Inferior como link */}
           <a
-            href="/palmares"
+            href="/mazalife"
             className="relative group aspect-[16/9] block rounded-md overflow-hidden"
           >
             <img
-              src="/img/projects/4_palmares.webp"
+              src="/img/projects/mazalife/Mazalife.webp"
               alt="Palmarés"
               className="w-full h-full object-cover"
             />
@@ -127,8 +127,8 @@ const Page = () => {
 
             {/* Texto overlay */}
             <div className="absolute bottom-6 left-6 z-10 text-white">
-              <h4 className="text-sm">Palmarés</h4>
-              <h3 className="text-2xl font-bold">El sabor de Sinaloa</h3>
+              <h4 className="text-sm">Mazalife</h4>
+              <h3 className="text-2xl font-bold">Diversión para todos</h3>
               <span className="mt-2 inline-flex items-center text-sm underline underline-offset-4">
                 Ver caso de estudio →
               </span>
