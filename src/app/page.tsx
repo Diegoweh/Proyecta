@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* LogosSection */}
-      <div id='contacto' className="flex justify-center items-center text-red-500 text-xl
+      <div className="flex justify-center items-center text-red-500 text-xl
       lg:text-4xl px-6">
         Marcas que han confiado en nosotros
       </div>

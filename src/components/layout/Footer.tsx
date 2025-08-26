@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black text-white">
 
       {/* CTA Section */}
-      <div className="border-t border-gray-800">
+      <div id='contacto' className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-red-500 mb-4">¿Cuándo iniciamos?</h3>
