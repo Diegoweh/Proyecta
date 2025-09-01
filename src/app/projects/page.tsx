@@ -33,6 +33,7 @@ const Page = () => {
         <a
           href="/acuario"
           className="block relative w-full aspect-video max-w-full mx-auto rounded-xl overflow-hidden shadow-lg group"
+          title='Gran Acuario Mazatlán'
         >
           <video
             className="w-full h-full object-cover group-hover:brightness-75 transition"
@@ -64,6 +65,7 @@ const Page = () => {
         <a
           href="/mazatun"
           className="relative group aspect-[3/4] md:aspect-auto block rounded-md overflow-hidden"
+          title='Mazatún'
         >
           <img
             src="/img/projects/6.webp"
@@ -91,6 +93,7 @@ const Page = () => {
           <a
             href="/gavias"
             className="relative group aspect-[16/9] block rounded-md overflow-hidden"
+            title='Las Gavias Grand'
           >
             <img
               src="/img/projects/lasgavias.webp"
@@ -115,6 +118,7 @@ const Page = () => {
           <a
             href="/mazalife"
             className="relative group aspect-[16/9] block rounded-md overflow-hidden"
+            title='Mazalife'
           >
             <img
               src="/img/projects/mazalife/Mazalife.webp"

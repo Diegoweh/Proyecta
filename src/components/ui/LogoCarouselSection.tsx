@@ -60,6 +60,7 @@ const LogoCarouselSection = () => {
             src={src}
             alt={`Logo ${index + 1}`}
             className="w-40 h-20 object-contain grayscale opacity-70 hover:opacity-100 transition"
+            title='Logo'
           />
         ))}
       </div>
@@ -80,6 +81,7 @@ const LogoCarouselSection = () => {
                       src={src}
                       alt={`Logo ${groupIndex * 20 + i + 1}`}
                       className="w-30 h-20 object-contain grayscale opacity-70 hover:opacity-100 transition"
+                      title='Logo'
                     />
                   </div>
                 ))}

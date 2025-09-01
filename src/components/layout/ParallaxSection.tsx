@@ -33,7 +33,7 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
   }, [media]);
 
   return (
-    <Link href={href} className={`relative ${height} w-full overflow-hidden block`}>
+    <Link href={href} title='banner' className={`relative ${height} w-full overflow-hidden block`}>
       {/* Parallax media */}
       <Parallax
         translateY={[-intensity, intensity]}
@@ -56,6 +56,7 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
             src={media}
             alt="Parallax media"
             className="w-full h-full object-cover"
+            title='Image'
           />
         )}
       </Parallax>
@@ -72,6 +73,7 @@ const ParallaxItem: React.FC<ParallaxItemProps> = ({
             src={logoSrc}
             alt="Logo"
             className="w-50 h-50 lg:w-65 lg:h-65 mb-2 object-contain"
+            title='Logo'
           />
         )}
         {title && (

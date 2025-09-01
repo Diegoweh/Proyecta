@@ -16,7 +16,7 @@ const Navbar = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
       <div className="text-white font-bold text-lg">
-        <Link href="/">
+        <Link href="/" title='Home'>
           <img
           title="Logo"
           src="/img/logos/proyectaw.png"
@@ -35,22 +35,22 @@ const Navbar = () => {
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
       >
       <div className="hidden md:flex gap-6 text-white font-medium">
-        <Link href="/#we" scroll={true}>
+        <Link href="/#we" title='we' scroll={true}>
         <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
             Nosotros
         </span>
         </Link>
-        <Link href="/#servicios" scroll={true}>
+        <Link href="/#servicios" title='service' scroll={true}>
         <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
             Servicios
         </span>
         </Link>
-        <Link href="#contacto" scroll={true}>
+        <Link href="#contacto" title='contact' scroll={true}>
         <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
             Contacto
         </span>
         </Link>
-        <Link href="/projects">
+        <Link href="/projects" title='projects'>
         <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-sm md:text-xl">
             Portafolio
         </span>
@@ -70,16 +70,16 @@ const Navbar = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-black/90 backdrop-blur-md flex flex-col items-center py-4 gap-4 font-medium md:hidden">
-          <Link href="/#we" onClick={() => setMenuOpen(false)}>
+          <Link href="/#we" title='we' onClick={() => setMenuOpen(false)}>
             <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">Nosotros</span>
           </Link>
-          <Link href="/#servicios" onClick={() => setMenuOpen(false)}>
+          <Link href="/#servicios" title='services' onClick={() => setMenuOpen(false)}>
             <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">Servicios</span>
           </Link>
-          <Link href="#contacto" onClick={() => setMenuOpen(false)}>
+          <Link href="#contacto" title='contact' onClick={() => setMenuOpen(false)}>
             <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">Contacto</span>
           </Link>
-          <Link href="/projects" onClick={() => setMenuOpen(false)}>
+          <Link href="/projects" title='projects' onClick={() => setMenuOpen(false)}>
             <span className="text-gray-100 hover:text-red-500 transition cursor-pointer text-lg md:text-4xl">Portafolio</span>
           </Link>
         </div>

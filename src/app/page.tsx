@@ -4,10 +4,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import ParallaxSection from "@/components/layout/ParallaxSection";
 import VideoBanner from "@/components/layout/VideoBanner";
 import { ArrowDown, ArrowRight, ArrowUp, Calendar, Monitor, Target } from "lucide-react";
-import Image from "next/image";
+
 import Link from "next/link";
 import { motion, AnimatePresence } from 'framer-motion';
-import Carousel from "@/components/ui/Carousel"
+
 import ServicesSection from '@/components/layout/ServiceSection';
 import ClientCarousel from '@/components/ui/ClientCarousel';
 import LogoCarouselSection from '@/components/ui/LogoCarouselSection';
@@ -65,7 +65,7 @@ export default function Home() {
 
           {/* Flecha abajo */}
           <div className="flex justify-center mt-12">
-            <Link href="#portfolio" scroll={true}>
+            <Link href="#portfolio" title='projects' scroll={true}>
               <ArrowDown
                 size={32}
                 className="text-white hover:text-red-500 transition transform hover:translate-y-1 animate-bounce"
@@ -164,7 +164,7 @@ export default function Home() {
 
                     {/* Flecha hacia arriba */}
                     <div className="flex justify-center md:justify-end">
-                      <Link href="#" scroll={true} className="group">
+                      <Link href="#" title='up' scroll={true} className="group">
                         <ArrowUp
                           size={32}
                           className="text-white hover:text-red-500 transition transform group-hover:-translate-y-1"

@@ -15,8 +15,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Proyecta Igniting Marketing | Creatividad, Medios y Resultados. Escala tu marca con nosotros.",
-  description: "En Proyecta te ayudamos a escalar tu marca con estrategias creativas, gestión de medios y un enfoque en resultados reales. Somos tu agencia de marketing aliada para llevar tu negocio al siguiente nivel."
+  metadataBase: new URL("https://proyecta.com.mx"),
+  title: "Proyecta Igniting Marketing | Creatividad, Medios y Resultados.",
+  description: "En Proyecta te ayudamos a escalar tu marca con estrategias creativas, gestión de medios y un enfoque en resultados reales. Somos tu agencia de marketing aliada para llevar tu negocio al siguiente nivel.",
+  alternates: { canonical: "https://proyecta.com.mx" },
+  openGraph: {
+    type: "website",
+    url: "https://proyecta.com.mx",
+    title: "Proyecta Igniting Marketing",
+    description: "Creatividad, Medios y Resultados.",
+    siteName: "Proyecta",
+    images: [{ url: "/og/home.jpg", width: 1200, height: 630 }]
+  },
+  twitter: { card: "summary_large_image" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-32x32.png"
+  },
+  manifest: "/site.webmanifest",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true }
+  }
 };
 
 export default function RootLayout({

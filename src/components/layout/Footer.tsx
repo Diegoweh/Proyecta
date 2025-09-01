@@ -14,23 +14,26 @@ export default function Footer() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:hola@proyecta.com.mx"
-                className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
-              >
-                Enviar Email
-              </a>
-              <a
                 href="https://wa.me/526699869090?text=Hola%2C%20quiero%20más%20información"
+                className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors"
+                title="WhatsApp"
               >
                 WhatsApp
+              </a>
+              <a
+                href="mailto:hola@proyecta.com.mx"
+                className="border border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors"
+                title="Enviar Email"
+              >
+                Enviar Email
               </a>
             </div>
           </div>
         </div>
       </div>
+      
 
 
       {/* Footer Content */}
@@ -60,21 +63,21 @@ export default function Footer() {
             <h3 className="text-red-500 font-bold text-lg mb-4">SERVICIOS</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="#" title="Branding" className="text-gray-300 hover:text-red-500 transition-colors">
                   Branding
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="#" title="Web" className="text-gray-300 hover:text-red-500 transition-colors">
                   Diseño Web
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="#" title="Marketing" className="text-gray-300 hover:text-red-500 transition-colors">
                   Marketing Digital
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
                   SEO
                 </a>
@@ -88,7 +91,7 @@ export default function Footer() {
                 <a href="#" className="text-gray-300 hover:text-red-500 transition-colors">
                   Eventos
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -97,12 +100,12 @@ export default function Footer() {
             <h3 className="text-red-500 font-bold text-lg mb-4">EMPRESA</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#we" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="/#we" title="we" className="text-gray-300 hover:text-red-500 transition-colors">
                   Nosotros
                 </a>
               </li>
               <li>
-                <a href="/projects" className="text-gray-300 hover:text-red-500 transition-colors">
+                <a href="/projects" title="projects" className="text-gray-300 hover:text-red-500 transition-colors">
                   Portafolio
                 </a>
               </li>
@@ -131,7 +134,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <a href="tel:+526699869090" className="text-gray-300 hover:text-red-500 transition-colors">
+                  <a href="tel:+526699869090" className="text-gray-300 hover:text-red-500 transition-colors" title="Phone">
                     +52 (669) 986 9090
                   </a>
                 </div>
@@ -140,7 +143,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <a href="mailto:hola@proyecta.com.mx" className="text-gray-300 hover:text-red-500 transition-colors">
+                  <a href="mailto:hola@proyecta.com.mx" className="text-gray-300 hover:text-red-500 transition-colors" title="Email">
                     hola@proyecta.com.mx
                   </a>
                 </div>
@@ -154,6 +157,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-300 hover:text-red-500 transition-colors"
+                    title="WhatsApp"
                   >
                     WhatsApp
                   </a>
@@ -181,10 +185,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">© 2025 Proyecta. Todos los derechos reservados.</p>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors text-sm">
+              <a href="#" title="terminos" className="text-gray-400 hover:text-red-500 transition-colors text-sm">
                 Términos y Condiciones
               </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors text-sm">
+              <a href="#" title="politics" className="text-gray-400 hover:text-red-500 transition-colors text-sm">
                 Política de Privacidad
               </a>
             </div>
