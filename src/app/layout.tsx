@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://proyecta.com.mx"),
   title: "Proyecta Igniting Marketing | Branding, Websites y Marketing.",
-  description: "Escalamos marcas con un enfoque de performance: estrategia creativa testable, compra de medios omnicanal (Google, Meta, TikTok), SEO/SEM y CRO. Medición end-to-end (GA4, server-side tagging), atribución y experimentación A/B para maximizar ROAS, LTV y eficiencia de CAC.",
+  description: "Agencia de marketing digital en México: estrategia y creatividad para impulsar tu marca con SEO, SEM, Google, Meta y TikTok. Generamos campañas medibles que aumentan ventas, fidelidad y crecimiento.",
   keywords: [
     "agencia de marketing",
     "marketing digital",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://proyecta.com.mx",
     title: "Proyecta Igniting Marketing",
-    description: "Branding, Webs ites y Marketing.",
+    description: "Branding, Websites y Marketing.",
     siteName: "Proyecta",
     images: [{ url: "/og/home.jpg", width: 1200, height: 630 }]
   },
