@@ -36,6 +36,10 @@ export default function Home() {
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
               viewport={{ once: true }}
             >
+              <h1 className="text-3xl hidden md:text-6xl font-bold leading-tight text-red-500 mb-6">
+                Branding, Marketing, Publicidad y <br />
+                Web sites
+              </h1>
               <h1 className="text-3xl md:text-6xl font-bold leading-tight text-red-500 mb-6">
                 Empower your ideas,<br />
                 Boost your success
@@ -80,7 +84,7 @@ export default function Home() {
         <ParallaxSection
          media="/video/home/home_acuario.mp4"
          logoSrc="/img/logos/logo_acuario.png"
-         title="¡Somos llenos de vida!"
+         title="Gran Acuario Mazatlán"
          description="Branding y concepto rector de campaña. Posicionamiento de marca a través de marketing digital."
          href='/acuario' 
          />         
@@ -88,7 +92,7 @@ export default function Home() {
         <ParallaxSection
          media="/img/home/mazatun.webp"
          logoSrc="/img/logos/logo_mazatun.png"
-         title="¡El sabor de toda la vida!"
+         title="Mazatún"
          description="Desarrollo del concepto rector y estratégico para la campaña nacional."
          href='/mazatun' 
          />
@@ -96,7 +100,7 @@ export default function Home() {
         <ParallaxSection
          media="/img/home/gaviana.webp"
          logoSrc="/img/logos/logo_gaviana.png"
-         title="Tu casa de playa"
+         title="Gaviana Resorts"
          description="Manejo de redes sociales, campañas de marketing digital y desarrollo web para complejo turístico en Mazatlán."
          href='/gavias' 
         />
@@ -104,7 +108,7 @@ export default function Home() {
         <ParallaxSection
          media="/img/projects/mazalife/1.webp"
          logoSrc="/img/logos/logo1.svg"
-         title="¡Diversión para todos!"
+         title="Mazalife"
          description="Desarrollo de campañas publicitarias y comunicación gráfica para posicionamiento local."
          href='/mazalife' 
          />
