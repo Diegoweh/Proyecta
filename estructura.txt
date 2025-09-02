@@ -1,0 +1,35 @@
+.
+├── app
+│   ├── acuario
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── gavias
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── mazalife
+│   │   └── page.tsx
+│   ├── mazatun
+│   │   └── page.tsx
+│   ├── page.tsx
+│   ├── palmares
+│   │   └── page.tsx
+│   └── projects
+│       └── page.tsx
+└── components
+    ├── layout
+    │   ├── Footer.tsx
+    │   ├── ImageList.tsx
+    │   ├── Navbar.tsx
+    │   ├── Parallax.jsx
+    │   ├── ParallaxSection.tsx
+    │   ├── ServiceSection.tsx
+    │   ├── SmoothScrolling.jsx
+    │   ├── tagline-section.tsx
+    │   └── VideoBanner.tsx
+    └── ui
+        ├── Carousel.tsx
+        ├── ClientCarousel.tsx
+        └── LogoCarouselSection.tsx
+
+11 directories, 22 files
