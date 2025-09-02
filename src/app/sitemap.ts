@@ -1,5 +1,9 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next";
+
+export const dynamic = 'force-static';   // 👈 obliga a ser 100% estático (válido para export)
+export const revalidate = false;         // 👈 no ISR con output: 'export'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: "https://proyecta.com.mx/", lastModified: new Date() },
